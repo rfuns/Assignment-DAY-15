@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Review Produk SockStore</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header0">
+      <div class="header1">
+        <img src="../assets/LogoSockStore.png" alt="logo" />
+        <nav class="Atas1">
+          <a href="#">Beranda</a>
+          <span class="sep">/</span>
+          <a href="#">Kaos Kaki</a>
+          <span class="sep">/</span>
+          <span aria-current="page">Kaos Kaki Premium Combed</span>
+        </nav>
+
+        <!-- Area akun: Daftar (non-member) / Ikon member + menu profil -->
+        <div class="account-area">
+          <!-- Tombol Daftar: tampil jika bukan member -->
+          <a
+            href="../Tugas 3/LoginMember.html"
+            class="btn-daftar"
+            id="daftarBtn"
+          >
+            Daftar Member
+          </a>
+
+          <!-- Ikon member + dropdown profil -->
+          <div class="member-wrap" id="memberWrap">
+            <button
+              class="member-icon"
+              id="memberIconBtn"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="Menu member"
+            >
+              <span id="memberInitial">M</span>
+            </button>
+
+            <div class="member-menu" id="memberMenu" hidden>
+              <p class="member-menu-title">Profil Member</p>
+              <div class="member-field">
+                <span class="member-field-label">Nama</span>
+                <span class="member-field-value" id="profileName">—</span>
+              </div>
+              <div class="member-field">
+                <span class="member-field-label">Email</span>
+                <span class="member-field-value" id="profileEmail">—</span>
+              </div>
+              <button class="btn-logout" id="logoutBtn" type="button">
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="product-top">
+        <div class="gallery">
+          <figure class="gallery-main">
+            <img
+              id="mainImage"
+              src="../assets/Kaos Kaki_Hitam.webp"
+              alt="Kaos Kaki Premium Combed warna Hitam"
+            />
+            <figcaption class="gallery-caption">
+              Kaos Kaki Premium Combed - Hitam
+            </figcaption>
+            <button class="zoom-btn" type="button" aria-label="Perbesar gambar">
+              ⤢
+            </button>
+          </figure>
+
+          <div class="ListGambars" role="list">
+            <button
+              class="ListGambar is-active"
+              type="button"
+              data-full="../assets/Kaos Kaki_Hitam.webp"
+              data-caption="Kaos Kaki Premium Combed - Hitam"
+              aria-label="Lihat Kaos Kaki Hitam"
+            >
+              <img
+                src="../assets/Kaos Kaki_Hitam.webp"
+                alt="ListGambar Kaos Kaki Hitam"
+              />
+            </button>
+            <button
+              class="ListGambar"
+              type="button"
+              data-full="../assets/Kaos Kaki_AbuAbu.webp"
+              data-caption="Kaos Kaki Premium Combed - Abu-abu"
+              aria-label="Lihat Kaos Kaki Abu-abu"
+            >
+              <img
+                src="../assets/Kaos Kaki_AbuAbu.webp"
+                alt="ListGambar Kaos Kaki Abu-abu"
+              />
+            </button>
+            <button
+              class="ListGambar"
+              type="button"
+              data-full="../assets/Detail spec kaos kaki Hitam.webp"
+              data-caption="Detail spesifikasi - Hitam"
+              aria-label="Lihat detail spesifikasi Hitam"
+            >
+              <img
+                src="../assets/Detail spec kaos kaki Hitam.webp"
+                alt="ListGambar detail spesifikasi Hitam"
+              />
+            </button>
+            <button
+              class="ListGambar"
+              type="button"
+              data-full="../assets/Detail spec kaos kaki AbuAbu.webp"
+              data-caption="Detail spesifikasi - Abu-abu"
+              aria-label="Lihat detail spesifikasi Abu-abu"
+            >
+              <img
+                src="../assets/Detail spec kaos kaki AbuAbu.webp"
+                alt="ListGambar detail spesifikasi Abu-abu"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="infoproduct">
+          <div class="rating" aria-label="Rating 4.7 dari 5, 3 ulasan">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="ratinginvalue">4.7</span>
+            <span class="ratingincount">(3 ulasan)</span>
+          </div>
+
+          <div class="price">
+            <span class="pricenow" id="priceNow">Rp45.000</span>
+            <span class="priceold" id="priceOld">Rp50.000</span>
+            <span class="badgediscount" id="badgeDiscount">-10%</span>
+          </div>
+
+          <p class="KetersediaanUnit">
+            Pilih ukuran untuk melihat ketersediaan.
+          </p>
+
+          <div class="variant">
+            <p class="variant-label">Warna: <strong>Hitam</strong></p>
+            <div class="color-options" role="group" aria-label="Pilihan warna">
+              <button
+                class="color-swatch is-selected"
+                style="--c: #2b2f38"
+                type="button"
+                aria-label="Warna Hitam"
+                data-color="Hitam"
+                data-full="../assets/Kaos Kaki_Hitam.webp"
+                data-caption="Kaos Kaki Premium Combed - Hitam"
+              ></button>
+              <button
+                class="color-swatch"
+                style="--c: #9ba1a9"
+                type="button"
+                aria-label="Warna Abu-abu"
+                data-color="Abu-abu"
+                data-full="../assets/Kaos Kaki_AbuAbu.webp"
+                data-caption="Kaos Kaki Premium Combed - Abu-abu"
+              ></button>
+            </div>
+          </div>
+
+          <div class="variant">
+            <p class="variant-label">Ukuran: <span class="muted">—</span></p>
+            <div class="sizeoptions" role="group" aria-label="Pilihan ukuran">
+              <button class="sizeoption" type="button">S</button>
+              <button class="sizeoption" type="button">M</button>
+              <button class="sizeoption" type="button">L</button>
+              <button class="sizeoption" type="button">XL</button>
+            </div>
+            <a href="#panduan" class="sizeguidelink">Panduan ukuran</a>
+            <p id="sizeWarning" class="size-warning" hidden>
+              Ukuran Belum di Pilih
+            </p>
+          </div>
+
+          <div class="variant">
+            <p class="variant-label">Jumlah</p>
+            <div class="qty">
+              <button class="qty-btn" type="button" aria-label="Kurangi jumlah">
+                −
+              </button>
+              <input
+                class="qty-input"
+                type="text"
+                value="1"
+                inputmode="numeric"
+                aria-label="Jumlah produk"
+              />
+              <button class="qty-btn" type="button" aria-label="Tambah jumlah">
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-cart" type="button" id="addToCartBtn">
+              Tambah ke Keranjang
+            </button>
+            <button class="btn btn-buy" type="button" id="buyNowBtn">
+              Beli Sekarang
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-tabs" id="panduan">
+        <div class="tab-bar" role="tablist">
+          <button
+            class="tab is-active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-tab="deskripsi"
+          >
+            Deskripsi
+          </button>
+          <button
+            class="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-tab="panduan"
+          >
+            Panduan Ukuran
+          </button>
+          <button
+            class="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-tab="perawatan"
+          >
+            Perawatan
+          </button>
+        </div>
+
+        <div class="tab-content" role="tabpanel">
+          <div class="tab-panel is-active" data-panel="deskripsi">
+            <p>
+              Kaos Kaki Premium Combed dibuat dari
+              <strong>katun combed 24s</strong>
+              yang lembut, menyerap keringat, dan tidak mudah melar. Cocok untuk
+              aktivitas harian, kerja, maupun olahraga ringan.
+            </p>
+            <ul>
+              <li>Bahan: 80% katun combed, 15% polyester, 5% spandex</li>
+              <li>Karet pergelangan elastis, tidak menekan</li>
+              <li>Jahitan ujung halus (seamless toe)</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" data-panel="panduan">
+            <p>
+              Kaos kaki “all size” umumnya setara ukuran M–L dan cocok untuk
+              panjang kaki sekitar 24–28 cm, mengikuti rentang ukuran kaos kaki
+              dewasa yang paling umum digunakan.
+            </p>
+            <p>
+              “All size” berarti satu ukuran yang dirancang agar muat untuk
+              berbagai ukuran kaki. Biasanya menggunakan bahan elastis sehingga
+              dapat menyesuaikan bentuk kaki.
+            </p>
+            <p>
+              Ukuran All Size Berdasarkan Data Ukuran Kaos Kaki mengacu pada
+              tabel ukuran kaos kaki dewasa:
+            </p>
+            <ul>
+              <li>M: panjang kaki 26–28 cm</li>
+              <li>L: panjang kaki 28–30 cm</li>
+            </ul>
+            <p>
+              Rentang ini adalah yang paling umum dipakai sebagai “all size”
+              karena fleksibel untuk mayoritas orang dewasa.
+            </p>
+          </div>
+
+          <div class="tab-panel" data-panel="perawatan">
+            <p>
+              Jika Anda ingin mencuci kaus kaki menggunakan mesin cuci, pastikan
+              Anda membalikkan kaus kaki terlebih dahulu sebelum mencucinya
+              dengan pengaturan putaran halus (gentle). Jika Anda ingin
+              mencucinya secara manual (dengan tangan), goyangkan dan rendam
+              kaus kaki dalam campuran air hangat dan detergen. Setelah dicuci,
+              jemur kaus kaki untuk mengeringkannya agar kaus kaki tidak sampai
+              rusak.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox / Zoom -->
+    <div class="lightbox" id="lightbox" hidden>
+      <div class="lightbox-backdrop" data-close></div>
+      <div
+        class="lightbox-body"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Pratinjau gambar"
+      >
+        <button
+          class="lightbox-close"
+          type="button"
+          data-close
+          aria-label="Tutup"
+        >
+          &times;
+        </button>
+        <img id="lightboxImage" src="" alt="Pratinjau gambar produk" />
+        <p
+          id="lightboxCaption"
+          style="margin-top: 12px; text-align: center; color: var(--muted)"
+        ></p>
+      </div>
+    </div>
+
+    <script src="../Tugas 3/JadiMember.js"></script>
+  </body>
+</html>

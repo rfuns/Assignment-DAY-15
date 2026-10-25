@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bayar Sekarang - SockStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-slate-50 px-4 py-8 text-slate-800 antialiased"
+  >
+    <div class="w-full max-w-md">
+      <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <!-- Logo -->
+        <div class="mb-6 flex flex-col items-center gap-3 text-center">
+          <img
+            src="../assets/LogoSockStore.png"
+            alt="logo SockStore"
+            class="h-10 w-auto"
+          />
+          <h1 class="text-xl font-bold tracking-tight text-slate-900">
+            Pembayaran
+          </h1>
+        </div>
+
+        <!-- Status pembayaran -->
+        <div
+          id="statusBox"
+          class="mb-6 rounded-xl bg-amber-50 px-4 py-3 text-center text-sm font-semibold text-amber-700"
+        >
+          Menunggu Pembayaran
+        </div>
+
+        <!-- Ikon provider -->
+        <div class="mb-4 flex items-center justify-center">
+          <img
+            id="providerIcon"
+            src=""
+            alt="Ikon metode pembayaran"
+            class="h-12 w-auto rounded"
+          />
+        </div>
+
+        <!-- Detail pembayaran -->
+        <div id="detailBox" class="space-y-4 text-sm">
+          <!-- Diisi oleh JavaScript -->
+        </div>
+
+        <!-- Countdown 24 jam -->
+        <div
+          id="countdownBox"
+          class="mt-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-center"
+        >
+          <p class="text-xs text-slate-500">Selesaikan pembayaran dalam</p>
+          <p id="countdown" class="mt-1 text-2xl font-bold text-slate-900">
+            24:00:00
+          </p>
+        </div>
+
+        <!-- Tombol simulasi pembayaran (demo) -->
+        <button
+          type="button"
+          id="simulatePaidBtn"
+          class="mt-6 w-full rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-900/30"
+        >
+          Saya Sudah Bayar (Simulasi)
+        </button>
+
+        <p class="mt-2 text-center text-[11px] text-slate-400">
+          Demo: status pembayaran juga otomatis menjadi berhasil setelah
+          beberapa saat.
+        </p>
+
+        <a
+          href="../Tugas 1/index.html"
+          class="mt-3 block w-full rounded-xl border border-slate-300 px-4 py-2.5 text-center text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+        >
+          Kembali ke Produk
+        </a>
+      </div>
+    </div>
+
+    <script src="../Tugas 3/bayar-sekarang.js"></script>
+  </body>
+</html>
